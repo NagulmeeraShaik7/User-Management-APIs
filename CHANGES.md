@@ -251,4 +251,8 @@ AI assistants were used as development tools during this project. The following 
 - No code was accepted without human review and testing.
 
 # Notes on Other Tools
-- Cursor was not used in this project, but is recommended for efficient and optimized code writing in future work.
+- Cursor was not used in this project, but is recommended for efficient and optimized code writing in future work. 
+
+# Deployed Url 
+
+https://user-management-apis.onrender.com/{end-points}
