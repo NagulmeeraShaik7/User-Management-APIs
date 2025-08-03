@@ -224,4 +224,31 @@ All API endpoints are accessible via `http://127.0.0.1:5000`. For interactive do
 - Add database migrations and seeders.
 - Improve input validation and error messages.
 - Refactor for async support and scalability.
-- Add logging and monitoring.
+- Add logging and monitoring. 
+
+
+# AI Usage
+
+AI assistants were used as development tools during this project. The following tools were utilized:
+
+- `ChatGPT:` Used for code generation, refactoring suggestions, and documentation drafting.
+- `GitHub Copilot:` Assisted with code completion, boilerplate generation, and error handling patterns.
+- `Gemini:` Provided architectural advice and code review feedback.
+- `Grok:` Used for code search and understanding legacy code structure. 
+
+
+# How AI Was Used
+
+- Generated initial code for modularization, error handling, and API documentation.
+- Drafted and refined documentation sections, including this CHANGES.md.
+- Provided suggestions for best practices and project structure.
+- Assisted in identifying and resolving major issues in the legacy code. 
+
+
+# Modifications and Decisions
+- All AI-generated code was reviewed and manually modified to fit project requirements and ensure correctness.
+- Some AI suggestions were rejected if they did not align with project goals or best practices.
+- No code was accepted without human review and testing.
+
+# Notes on Other Tools
+- Cursor was not used in this project, but is recommended for efficient and optimized code writing in future work.
