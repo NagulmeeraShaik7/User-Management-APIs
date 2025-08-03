@@ -15,11 +15,11 @@ swagger_blueprint = {
         "description": "API for managing users, including authentication and CRUD operations.",
         "version": "1.0.0"
     },
-    "host": "127.0.0.1:5000", # Replace with your actual host in production
+    "host": "localhost:5000",  # Update to "user-management-apis.onrender.com" in production
     "basePath": "/",
     "schemes": [
-        "http"
-        # "https" # Add https if you are serving over HTTPS
+        "http",
+        "https"
     ],
     "consumes": [
         "application/json"
@@ -36,8 +36,7 @@ swagger_blueprint = {
         }
     },
     "paths": {
-        # Auth Routes
-        "/login": {
+        "/api/login": {
             "post": {
                 "summary": "User Login",
                 "description": "Authenticates a user and returns a JWT token.",
@@ -64,7 +63,7 @@ swagger_blueprint = {
                 "tags": ["Auth"]
             }
         },
-        "/users": {
+        "/api/users": {
             "post": {
                 "summary": "Create a New User",
                 "description": "Registers a new user account.",
@@ -104,7 +103,7 @@ swagger_blueprint = {
                 "tags": ["Users"]
             }
         },
-        "/user/{user_id}": {
+        "/api/user/{user_id}": {
             "get": {
                 "summary": "Get User by ID",
                 "description": "Retrieves details for a specific user.",
@@ -187,7 +186,7 @@ swagger_blueprint = {
                 "tags": ["Users"]
             }
         },
-        "/search": {
+        "/api/search": {
             "get": {
                 "summary": "Search Users by Name",
                 "description": "Searches for users whose name contains the given string (case-insensitive).",

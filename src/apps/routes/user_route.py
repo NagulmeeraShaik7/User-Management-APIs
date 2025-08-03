@@ -33,13 +33,13 @@ controller = UserController(usecase)
 
 # Define routes and map them to controller methods
 # Now, 'controller' is a directly available variable
-user_bp.route('/users', methods=['GET'])(controller.get_all_users)
-user_bp.route('/user/<int:user_id>', methods=['GET'])(controller.get_user)
-user_bp.route('/users', methods=['POST'])(controller.create_user)
-user_bp.route('/user/<int:user_id>', methods=['PUT'])(controller.update_user)
-user_bp.route('/user/<int:user_id>', methods=['DELETE'])(controller.delete_user)
-user_bp.route('/search', methods=['GET'])(controller.search_users)
-user_bp.route('/login', methods=['POST'])(controller.login_user)
+user_bp.route('/api/users', methods=['GET'])(controller.get_all_users)
+user_bp.route('/api/user/<int:user_id>', methods=['GET'])(controller.get_user)
+user_bp.route('/api/users', methods=['POST'])(controller.create_user)
+user_bp.route('/api/user/<int:user_id>', methods=['PUT'])(controller.update_user)
+user_bp.route('/api/user/<int:user_id>', methods=['DELETE'])(controller.delete_user)
+user_bp.route('/api/search', methods=['GET'])(controller.search_users)
+user_bp.route('/api/login', methods=['POST'])(controller.login_user)
 
 # Remove the @user_bp.before_app_request block as it's no longer needed for initialization
 # @user_bp.before_app_request
