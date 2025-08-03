@@ -1,5 +1,5 @@
 from flask import request, jsonify
-from middlewares.auth_middleware import token_required
+from src.middlewares.auth_middleware import token_required
 from src.apps.utils.validators import validate_user_payload
 import sqlite3 # Import sqlite3 to catch IntegrityError directly
 import logging # For logging internal errors
